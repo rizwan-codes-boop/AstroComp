@@ -1,0 +1,17 @@
+1. What is Bash? 
+        Bash is a Unix shell and command language, commonly used as the default shell on many Linux and macOS systems.
+
+2. Difference between .bashrc and .bash_profile?
+        .bash_profile is executed for login shells, while .bashrc is run for interactive non-login shells. Typically, .bash_profile sources .bashrc to ensure settings are applied consistently.
+
+3. Show all directories listed in PATH:
+        echo $PATH
+
+4. What is the PATH variable good for?
+        The PATH environment variable tells the shell which directories to search for executable programs. It allows to run commands without needing to specify their full path.
+
+5. What is file descriptor FD0 used for?
+        FD0 refers to standard input (stdin), usually the keyboard input.
+
+6. Command to redirect stdout and stderr of 'ls * wrong path or file' to shell.out:
+    ls * "wrong_path_or_file" > shell.out 2>&1
